@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --light-gray-color: hsl(212, 45%, 89%);
+    --grayish-blue-color: hsl(220, 15%, 55%);
+    --dark-blue-color: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 32px;
+    background-color: var(--light-gray-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: var(--white-color);
+    text-align: center;
+}
+
+.container .img {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+.container .img img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.container .info .info-description {
+    padding: 0 16px;
+    color: var(--grayish-blue-color);
+}
+
+.container .info .info-title {
+    margin-bottom: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        min-height: 60vh;
+        max-width: 20%;
+    }
+
+    .container .info .info-description {
+        padding: 0 8px;
+    }
+}
