@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+@layer base {
+    :root {
+        --mobile-screen: 375px;
+        --desktop-screen: 1440px;
+        --color-primary: hsl(238, 40%, 52%);
+        --color-primary-tint: hsl(239, 57%, 85%);
+        --color-secondary: hsl(358, 79%, 66%);
+        --color-secondary-tint: hsl(357, 100%, 86%);
+        --color-neutral: hsl(212, 24%, 26%);
+        --color-gray: hsl(211, 10%, 45%);
+        --color-gray-light: hsl(223, 19%, 93%);
+        --color-gray-very-light: hsl(228, 33%, 97%);
+        --color-white: hsl(0, 0, 100%);
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    svg > * {
+        transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    button > span,
+    button {
+        transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.comment-component.has-child,
+.comment-list {
+    display: grid;
+    gap: 1rem;
+}
+
+/* ONLY TEXT IN BUTTON */
+.button-primary-text-only {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: var(--color-primary);
+}
+.button-primary-text-only:hover {
+    background-color: var(--color-primary-tint);
+}
+
+/* ICON + TEXT in BUTTON */
+.button-primary-text:hover svg path {
+    fill: var(--color-primary-tint);
+}
+
+.button-primary-text:hover span {
+    color: var(--color-primary-tint);
+}
+
+.button-secondary-text:hover svg path {
+    fill: var(--color-secondary-tint);
+}
+.button-secondary-text:hover span {
+    color: var(--color-secondary-tint);
+}
+/* END ICON + TEXT in BUTTON */
+
+/* ONLY ICON IN BUTTON */
+.button-primary-icon:hover svg path {
+    fill: var(--color-primary);
+}
+.button-secondary-icon:hover svg path {
+    fill: var(--color-secondary);
+}

@@ -1,0 +1,27 @@
+<div
+                                class="reply-comment-component grid grid-cols-[0.5fr_11.5fr] gap-4 p-6 rounded-xl bg-white"
+                            >
+                                <div class="avatar w-8">
+                                    <img
+                                        src="./images/avatars/image-amyrobson.webp"
+                                        alt=""
+                                    />
+                                </div>
+                                <form
+                                    action=""
+                                    class="grid grid-cols-[10fr_2fr] gap-4"
+                                >
+                                    <textarea
+                                        name="comment"
+                                        id=""
+                                        cols="30"
+                                        rows="3"
+                                        class="px-6 py-2 text-neutral border-2 rounded-lg border-primary-tint focus:border-primary focus:outline-none"
+                                    ></textarea>
+                                    <button
+                                        class="flex items-start justify-center h-min py-2 rounded-lg button-primary-text-only"
+                                    >
+                                        <span>Send</span>
+                                    </button>
+                                </form>
+                            </div>
