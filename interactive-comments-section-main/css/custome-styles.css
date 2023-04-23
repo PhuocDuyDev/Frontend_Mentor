@@ -31,8 +31,11 @@
     }
 }
 
+.comment-list-container,
 .comment-component.has-child,
-.comment-list {
+.comment-list,
+.comment-list.has-child,
+.comment-list-children {
     display: grid;
     gap: 1rem;
 }
@@ -46,6 +49,15 @@
 }
 .button-primary-text-only:hover {
     background-color: var(--color-primary-tint);
+}
+.button-secondary-text-only {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: var(--color-secondary);
+}
+.button-secondary-text-only:hover {
+    background-color: var(--color-secondary-tint);
 }
 
 /* ICON + TEXT in BUTTON */
@@ -71,4 +83,22 @@
 }
 .button-secondary-icon:hover svg path {
     fill: var(--color-secondary);
+}
+
+.isEditing {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.isFormNotEditing {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.isModalNotDeleting {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
 }
